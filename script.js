@@ -4,12 +4,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     fixYesButton();
     function fixYesButton () {
         const yesData = yesButton.getBoundingClientRect();
-        const y = yesData.y
-        const height = yesData.height;
+        const {y,height} = yesData
         noButton.style.top = `${y + height}px`;
-        console.log(y + height);
-        console.log(noButton.getBoundingClientRect())
-        
     }
 
     function randomNumber (min, max) {
@@ -17,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     function pictureChange() {
-        document.getElementsByClassName('gif').src="snoopy-cry.gif";
+        document.getElementsByClassName('gif')[0].src="snoopy-cry.gif";
     }
 
     noButton.addEventListener('click', (e) => {
@@ -29,6 +25,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         BigInt.innterText = "Press Yes!"
         e.target.style.left = `${x}px`;
         e.target.style.top = `${y}px`;
+        pictureChange();
+    });
+
+    yesButton.addEventListener('click', (e) => {
+        document.getElementsByClassName('gif')[0].src="yes.gif";
+        yesButton.style.display = "none"
+        noButton.style.display = "none"
+        const fq = document.getElementById("fq")
+        const sq = document.getElementById("sq")
+        sq.style.display = "none"
+        fq.innerHTML = "See u sooooon! (ꈍ ω ꈍ)"
+        // setAttribute()
     });
 });
   
