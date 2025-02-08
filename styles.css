@@ -34,9 +34,9 @@ body {
 }
 
 .question {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   font-family: Brush Script MT;
   color:#ff257e
 }
