@@ -1,0 +1,255 @@
+body {
+  height: 844px;
+  width: 390px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc5e6;
+}
+
+.div_ques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gif {
+  width: 300px;
+  height: auto;
+  border: 4px solid #ff2644;
+  border-radius: 25px;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Brush Script MT;
+  color:#ff257e
+}
+
+.div_but {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.yes,
+.yes *,
+.yes :after,
+.yes :before,
+.yes:after,
+.yes:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.yes {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ff2644;
+  background-image: none;
+  color: #ffc5e6;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#ff2644, #ffc5e6);
+  padding: 0;
+}
+.yes:disabled {
+  cursor: default;
+}
+.yes:-moz-focusring {
+  outline: auto;
+}
+.yes svg {
+  display: block;
+  vertical-align: middle;
+}
+.yes [hidden] {
+  display: none;
+}
+.yes {
+  --neon: #ff257e;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  outline: 4px solid #ffc5e6;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s linear 0.1s;
+}
+.yes:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: #ffc5e6;
+  outline-color: transparent;
+  transition: 0.2s linear 0.6s;
+}
+.yes span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.yes .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.yes:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.yes .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.yes:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.yes .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.yes:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.yes .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.yes:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
+
+.no,
+.no *,
+.no :after,
+.no :before,
+.no:after,
+.no:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.no {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ff2644;
+  background-image: none;
+  color: #ffc5e6;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#ff2644, #ffc5e6);
+  padding: 0;
+}
+.no:disabled {
+  cursor: default;
+}
+.no:-moz-focusring {
+  outline: auto;
+}
+.no svg {
+  display: block;
+  vertical-align: middle;
+}
+.no [hidden] {
+  display: none;
+}
+.no {
+  --neon: #ff257e;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  outline: 4px solid #ffc5e6;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  /* position: relative; */
+  text-transform: uppercase;
+  transition: 0.2s linear 0.1s;
+}
+.no:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: #ffc5e6;
+  outline-color: transparent;
+  transition: 0.2s linear 0.6s;
+}
+.no span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.no .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.no:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.no .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.no:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.no .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.no:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.no .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.no:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
