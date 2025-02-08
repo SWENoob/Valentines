@@ -24,18 +24,18 @@ body {
 }
 
 .question {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-family: Brush Script MT;
   color:#ff257e
 }
 
 .div_but {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .yes,
@@ -198,7 +198,6 @@ body {
   outline-offset: -4px;
   overflow: hidden;
   padding: 1.2rem 3rem;
-  /* position: relative; */
   position: absolute;
   text-transform: uppercase;
   transition: 0.2s linear 0.1s;
@@ -214,7 +213,7 @@ body {
 .no span {
   display: block;
   inset: 0;
-  position: absolute;
+  /* position: absolute; */
 }
 .no .top {
   border-top: 4px solid var(--neon);
