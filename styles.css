@@ -1,9 +1,12 @@
 body {
   height: 844px;
   width: 390px;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ffc5e6;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .div_ques {
@@ -30,8 +33,9 @@ body {
 
 .div_but {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 .yes,
@@ -58,6 +62,7 @@ body {
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#ff2644, #ffc5e6);
   padding: 0;
+  border-radius: 20px;
 }
 .yes:disabled {
   cursor: default;
@@ -168,6 +173,7 @@ body {
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#ff2644, #ffc5e6);
   padding: 0;
+  border-radius: 20px;
 }
 .no:disabled {
   cursor: default;
@@ -193,6 +199,7 @@ body {
   overflow: hidden;
   padding: 1.2rem 3rem;
   /* position: relative; */
+  position: absolute;
   text-transform: uppercase;
   transition: 0.2s linear 0.1s;
 }
