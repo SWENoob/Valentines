@@ -8,10 +8,12 @@ function pictureChange() {
 }
 
 noButton.addEventListener('click', () => {
-    let num1 = randomNumber(20, 300);
-    let num2 = randomNumber(30, 600);
+    const bodyElement = document.getElementById("bo");
+    const bodyData = bodyElement.getBoundingClientRect();
+
+    let x = randomNumber(10, bodyData.width - 130);
+    let y = randomNumber(10, bodyData.height - 80);
     BigInt.innterText = "Press Yes!"
-    console.log(num1 + ' ' + num2);
-    event.target.style.left = `${num1}px`;
-    event.target.style.top = `${num2}px`;
+    event.target.style.left = `${x}px`;
+    event.target.style.top = `${y}px`;
 });

@@ -12,11 +12,12 @@ body {
   height: 844px;
   width: 390px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #ffc5e6;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 
 .div_ques {
@@ -24,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .gif {
@@ -184,6 +186,8 @@ body {
   -webkit-mask-image: -webkit-radial-gradient(#ff2644, #ffc5e6);
   padding: 0;
   border-radius: 20px;
+  left: calc(50vw - 60.5115px);
+  top: 435px;
 }
 .no:disabled {
   cursor: default;
