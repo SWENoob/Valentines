@@ -184,8 +184,7 @@ body {
   -webkit-mask-image: -webkit-radial-gradient(#ff2644, #ffc5e6);
   padding: 0;
   border-radius: 20px;
-  left: calc(50vw - 60.5115px);
-  top: 435px;
+  /* top: 435px; */
 }
 .no:disabled {
   cursor: default;

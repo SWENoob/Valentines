@@ -1,4 +1,16 @@
 const noButton = document.getElementById("id-no");
+const yesButton = document.getElementById("id-yes");
+fixYesButton();
+function fixYesButton () {
+    const yesData = yesButton.getBoundingClientRect();
+    const y = yesData.y
+    const height = yesData.height;
+    noButton.style.top = `${y + height}px`;
+    console.log(y + height);
+    console.log(noButton.getBoundingClientRect())
+    
+}
+
 function randomNumber (min, max) {
     return Math.floor(Math.random() * (max-min+1)) + min;
 }
